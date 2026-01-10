@@ -58,10 +58,16 @@ const dayIndex = Math.floor((new Date() - startDate) / (1000 * 60 * 60 * 24));
 document.getElementById("loveMessage").innerText = messages[dayIndex % messages.length];
 
 const music = document.getElementById("bgMusic");
-const btn = document.getElementById("playBtn");
+const musicBtn = document.getElementById("musicBtn");
 
-btn.addEventListener("click", () => {
-  music.play();
-  btn.style.display = "none"; // hide button after playing
+musicBtn.addEventListener("click", () => {
+  if (music.paused) {
+    music.play();
+    musicBtn.innerText = "🎵 Pause Music";
+  } else {
+    music.pause();
+    musicBtn.innerText = "🎵 Play Music";
+  }
 });
+
 
