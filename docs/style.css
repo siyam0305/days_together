@@ -48,3 +48,24 @@ h1 {
     opacity: 0;
   }
 }
+
+#musicBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff4f9a;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+#musicBtn:hover {
+  background-color: #ff81b3;
+}
