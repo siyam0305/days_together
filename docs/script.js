@@ -56,3 +56,12 @@ const messages = [
 
 const dayIndex = Math.floor((new Date() - startDate) / (1000 * 60 * 60 * 24));
 document.getElementById("loveMessage").innerText = messages[dayIndex % messages.length];
+
+const music = document.getElementById("bgMusic");
+const btn = document.getElementById("playBtn");
+
+btn.addEventListener("click", () => {
+  music.play();
+  btn.style.display = "none"; // hide button after playing
+});
+
