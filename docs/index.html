@@ -1,29 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Siyam 💖 Mabiya</title>
+  <title>Siyam 💕 Mabiya</title>
 
-  <!-- iPhone home screen support -->
+  <!-- iPhone home screen & manifest -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="S ❤️ M">
+  <meta name="apple-mobile-web-app-title" content="S 💖 M">
   <link rel="apple-touch-icon" href="icons/icon-180.png">
-
-  <!-- Manifest -->
   <link rel="manifest" href="manifest.json">
 
-  <!-- CSS -->
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
   <div class="container">
     <h1>Siyam 💕 Mabiya</h1>
-    <p class="subtitle">Together for</p>
-    <div id="days">0 days</div>
-    <p class="since">Since February 19, 2023</p>
+    <p id="loveMessage"></p>
+    <p>Together for</p>
+
+    <div id="timer">
+      <span id="days">0</span> days
+      <span id="hours">0</span> hrs
+      <span id="minutes">0</span> min
+      <span id="seconds">0</span> sec 💖
+    </div>
+
+    <p>Since February 19, 2023</p>
+
+    <!-- Photo slideshow -->
+    <div class="slideshow">
+      <img id="slide" src="photos/photo1.jpg">
+    </div>
   </div>
 
   <!-- Floating emojis -->
@@ -31,4 +46,4 @@
 
   <script src="script.js"></script>
 </body>
-</html> 
+</html>
