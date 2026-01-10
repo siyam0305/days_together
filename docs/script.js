@@ -35,9 +35,9 @@ setInterval(() => {
 
 // Photo slideshow
 const photos = [
-  "photos/photo1.jpg",
-  "photos/photo2.jpg",
-  "photos/photo3.jpg"
+  "photos/photo1.jpeg",
+  "photos/photo2.jpeg",
+  "photos/photo3.jpeg"
 ];
 let index = 0;
 setInterval(() => {
