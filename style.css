@@ -1,1 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffd6e8;
+  font-family: 'Comic Sans MS', 'Poppins', cursive;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20vh;
+  color: #ff4f9a;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+}
+
+#days {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.since {
+  font-size: 1rem;
+}
+
+/* Floating emojis */
+.emojis span {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
 
