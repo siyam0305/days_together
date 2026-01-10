@@ -1,15 +1,13 @@
-
 body {
   margin: 0;
-  padding: 0;
   background: #ffd6e8;
-  font-family: 'Comic Sans MS', 'Poppins', cursive;
+  font-family: Arial, sans-serif;
   overflow: hidden;
 }
 
 .container {
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 10vh;
   color: #ff4f9a;
 }
 
@@ -17,21 +15,23 @@ h1 {
   font-size: 3rem;
 }
 
-.subtitle {
-  font-size: 1.3rem;
-}
-
-#days {
-  font-size: 3.5rem;
+#timer {
+  font-size: 2rem;
   font-weight: bold;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
-.since {
-  font-size: 1rem;
+#loveMessage {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-/* Floating emojis */
+.slideshow img {
+  width: 250px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
 .emojis span {
   position: absolute;
   font-size: 2rem;
@@ -48,4 +48,3 @@ h1 {
     opacity: 0;
   }
 }
-
