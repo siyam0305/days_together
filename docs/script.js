@@ -38,11 +38,7 @@ const photos = [
   "photos/photo1.jpeg",
   "photos/photo2.jpeg",
   "photos/photo3.jpeg",
-  "photos/photo4.jpeg",
-  "photos/photo5.jpeg",
-  "photos/photo6.jpeg",
-  "photos/photo7.jpeg",
-  "photos/photo8.jpeg"
+  "photos/photo5.jpeg"
 ];
 let index = 0;
 setInterval(() => {
