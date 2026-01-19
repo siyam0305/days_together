@@ -37,7 +37,12 @@ setInterval(() => {
 const photos = [
   "photos/photo1.jpeg",
   "photos/photo2.jpeg",
-  "photos/photo3.jpeg"
+  "photos/photo3.jpeg",
+  "photos/photo4.jpeg",
+  "photos/photo5.jpeg",
+  "photos/photo6.jpeg",
+  "photos/photo7.jpeg",
+  "photos/photo8.jpeg"
 ];
 let index = 0;
 setInterval(() => {
@@ -51,11 +56,16 @@ const messages = [
   "You are my forever 🩷",
   "Life is beautiful with you 💕",
   "You are my safe place 💗",
-  "My heart chose you 💞"
+  "My heart chose you 💞",
+  "Every day with you is my favorite 🌸",
+  "You make my world softer 💕",
+  "I still choose you, every single day 💖",
+  "You are my calm and my chaos 🩷",
+  "With you, everything feels right 💗"
 ];
 
-const dayIndex = Math.floor((new Date() - startDate) / (1000 * 60 * 60 * 24));
-document.getElementById("loveMessage").innerText = messages[dayIndex % messages.length];
+const randomIndex = Math.floor(Math.random() * messages.length);
+document.getElementById("loveMessage").innerText = messages[randomIndex];
 
 const music = document.getElementById("bgMusic");
 const musicBtn = document.getElementById("musicBtn");
